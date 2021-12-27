@@ -1,0 +1,90 @@
+:root {
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --Text-input-field: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.logo {
+    width: 150px;
+    margin-bottom: 6.8rem;
+    justify-self: center;
+    display: none;
+}
+.tittle {
+    font-size: var(--lg);
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.subtittle {
+    font-size: var(--md);
+    font-weight: 300;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--Text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-image img {
+    width: 80px;
+}
+.primary-button {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--Hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--White);
+    width: 100%;
+    height: 52px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: 500;
+    margin-top: 32px;
+}
+.resent {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 13px;
+}
+.resent a{
+    color: var(--Hospital-green);
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .logo{
+        display: block;
+    }
+}
