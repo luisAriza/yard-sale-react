@@ -31,9 +31,6 @@ html {
     width: 300px;
 }
 .logo {
-    width: 150px;
-    margin-bottom: 6.8rem;
-    justify-self: center;
     display: none;
 }
 .tittle {
@@ -86,5 +83,8 @@ html {
 @media (max-width: 640px) {
     .logo{
         display: block;
+        width: 150px;
+        margin-bottom: 6.8rem;
+        justify-self: center;
     }
 }
