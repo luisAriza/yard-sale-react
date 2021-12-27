@@ -26,39 +26,36 @@ html {
 }
 .form-container {
     display: grid;
-    justify-items: center;
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
 .logo {
     width: 150px;
-    margin-bottom: 6.8rem;
+    margin-top: 4rem;
     justify-self: center;
     display: none;
 }
-.tittle {
-    font-size: var(--lg);
-    font-weight: 700;
-    margin-bottom: 12px;
-    text-align: center;
-}
-.subtittle {
-    font-size: var(--md);
-    font-weight: 300;
-    margin-bottom: 32px;
-    text-align: center;
-}
-.email-image {
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    background-color: var(--Text-input-field);
+.form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 3.6rem;
 }
-.email-image img {
-    width: 80px;
+.label {
+    font-size: var(--sm);
+    font-weight: 700;
+    margin-bottom: 4px;
+    padding-left: 4px;
+}
+.input {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--Text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 36px;
+    font-size: var(--md);
+    padding: 8px;  
+    width: 100%;
+    margin-bottom: 20px;
 }
 .primary-button {
     font-family: 'Quicksand', sans-serif;
@@ -71,16 +68,29 @@ html {
     cursor: pointer;
     font-size: var(--md);
     font-weight: 700;
-    margin-top: 32px;
+    margin-top: 20px;
 }
-.resent {
+.form a {
     text-align: center;
-    margin-top: 28px;
-    font-size: 13px;
-}
-.resent a{
+    margin-top: px;
+    font-size: var(--sm);
+    font-weight: 500;
     color: var(--Hospital-green);
     text-decoration: none;
+    margin-top: 28px;
+}
+.secondary-button {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--White);
+    border-radius: 8px;
+    border: 1px solid var(--Hospital-green);
+    color: var(--Hospital-green);
+    width: 100%;
+    height: 52px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: 700;
+    width: 300px;
 }
 
 @media (max-width: 640px) {
