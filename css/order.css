@@ -28,7 +28,7 @@ html {
 .my-order-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 360px;
+    width: 400px;
     margin-top: 52px;
 }
 .tittle {
@@ -89,13 +89,15 @@ html {
 }
 
 @media (max-width: 640px) {
+    .my-order {
+        place-items: start;
+    }
     .my-order-container {
         width: 300px;
+        margin-top: 0px;
+        margin: 0 auto;
     }
     .tittle {
         display: none;
-    }
-    .my-order-container {
-        margin-top: 0px;
     }
 }
