@@ -1,6 +1,6 @@
 :root {
     --Very-light-pink: #bebebe;
-    --White: #FFFFFF;
+    --White: #ffffffb6;
     --Text-input-field: #F7F7F7;
     --Black: #000000;
     --Hospital-green: #ACD9B2;
@@ -19,8 +19,103 @@ html {
     font-family: 'Quicksand', sans-serif;
 }
 
+.product-detail {
+    width: 380px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 0;
+    box-shadow: 2px 2px 20px 1px var(--Very-light-pink);
+}
+.product-detail-close {
+    background: var(--White);
+    width: 36px;
+    height: 36px;
+    padding: 11px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    box-shadow: 2px 2px 5px 1px var(--Very-light-pink);
+}
+.product-detail-close:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 1px var(--Very-light-pink);
+    background: white;
+}
+.product-detail > img:nth-child(2) {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 2px 2px 15px 2px var(--Very-light-pink);
+}
+/* Pedazo de código copiado */
+.points {
+    display: flex;
+    justify-content: center;
+}
+.points > li {
+    background: var(--Very-light-pink);
+    width: 6px;
+    height: 6px;
+    margin: 12px 4px 0;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+}
+.points > .active {
+    background: var(--Hospital-green);
+}
+.points > li:hover {
+    background: var(--Hospital-green);
+}
+/* Fin de pedazo de código copiado */
+.product-info {
+    width: 320px;
+    margin: 16px auto 0;
+}
+.product-info p:nth-child(1) {
+    font-size: var(--lg);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.product-info p:nth-child(2) {
+    color: var(--Dark);
+    font-size: var(--lg);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.product-info p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.primary-button {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--Hospital-green);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+    font-size: var(--lg);
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-@media (max-width: 1000px) {
-    
+@media (max-width: 640px) {
+    .product-detail {
+        width: 100%;
+        box-shadow: none;
+    }
+    .product-detail-close {
+        display: none;
+    }
+    .product-info {
+        width: 90%;
+    }
 }
