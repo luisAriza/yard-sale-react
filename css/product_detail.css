@@ -47,7 +47,7 @@ html {
     height: 360px;
     object-fit: cover;
     border-radius: 0 0 20px 20px;
-    box-shadow: 2px 2px 15px 2px var(--Very-light-pink);
+    box-shadow: 2px 2px 10px 2px var(--Very-light-pink);
 }
 /* Pedazo de código copiado */
 .points {
