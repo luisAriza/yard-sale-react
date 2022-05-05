@@ -20,7 +20,7 @@ module.exports = {
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "styles/styleSheet.min.css",
+      filename: "styles/[name].min.css",
     }),
     new CleanWebpackPlugin(),
   ],
