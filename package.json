@@ -1,0 +1,29 @@
+{
+  "name": "react_shop-yard_sale",
+  "version": "1.0.0",
+  "description": "E-Shop with reactJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisAriza/frontend_developer.git"
+  },
+  "keywords": [
+    "Javascript",
+    "reactJs",
+    "html",
+    "css"
+  ],
+  "author": "Luis Ariza <luismanuelariza@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisAriza/frontend_developer/issues"
+  },
+  "homepage": "https://github.com/luisAriza/frontend_developer#readme",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}

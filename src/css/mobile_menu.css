@@ -1,0 +1,50 @@
+:root {
+    --Very-light-pink: #e7e4e4;
+    --White: #FFFFFF;
+    --Text-input-field: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mobile-menu {
+    padding: 40px 36px 0px;
+}
+.mobile-menu ul {
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--Very-light-pink);
+}
+.mobile-menu ul:nth-child(1) li, .mobile-menu ul:nth-child(2) li {
+    margin-bottom: 36px;
+}
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--Black);
+    font-size: var(--md);
+    font-weight: 700;
+    list-style: none;
+}
+.mobile-menu .email {
+    font-size: var(--sm);
+}
+.mobile-menu li .sign-out {
+    color: var(--Hospital-green);
+    font-size: var(--sm);
+}
