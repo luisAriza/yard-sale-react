@@ -1,10 +1,10 @@
 // import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import Layout from "../containers/Layout";
-import Login from "../containers/Login";
-import RecoveryPassword from "../containers/RecoveryPassword";
-import NotFound from "../pages/NotFound";
+import Home from "@page/Home";
+import Layout from "@container/Layout";
+import Login from "@container/Login";
+import RecoveryPassword from "@container/RecoveryPassword";
+import NotFound from "@page/NotFound";
 
 const App = () => {
 	return (

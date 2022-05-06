@@ -1,6 +1,6 @@
 // import React from 'react';
-import "../sass/login.scss";
-import logo from "../assets/logos/logo_yard_sale.svg";
+import "@style/login.scss";
+import logo from "@logo/logo_yard_sale.svg";
 
 const Login = () => {
 	return (

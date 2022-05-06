@@ -11,6 +11,14 @@ module.exports = {
   mode: "development",
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@container": path.resolve(__dirname, "src/containers/"),
+      "@page": path.resolve(__dirname, "src/pages/"),
+      "@style": path.resolve(__dirname, "src/sass/"),
+      "@icon": path.resolve(__dirname, "src/assets/icons/"),
+      "@image": path.resolve(__dirname, "src/assets/images/"),
+      "@logo": path.resolve(__dirname, "src/assets/logos/"),
+    },
   },
   devServer: {
     static: {
