@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
@@ -9,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/"),
     filename: "app/bundle.js",
+    publicPath: "/",
   },
   mode: "production",
   resolve: {
@@ -19,14 +19,6 @@ module.exports = {
       inject: "body",
       template: "public/index.html",
       filename: "index.html",
-    }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "src/assets",
-          to: "assets",
-        },
-      ],
     }),
     new MiniCssExtractPlugin({
       filename: "styles/[name].min.css",
@@ -53,6 +45,13 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        loader: "file-loader",
+        options: {
+          name: "assets/images/[name]-[hash].[ext]",
+        },
       },
     ],
   },

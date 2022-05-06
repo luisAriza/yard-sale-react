@@ -1,12 +1,12 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist/"),
     filename: "app/bundle.js",
+    publicPath: "/",
   },
   mode: "development",
   resolve: {
@@ -16,6 +16,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist/"),
     },
+    historyApiFallback: true,
     compress: true,
     port: 8050,
     open: true,
@@ -25,14 +26,6 @@ module.exports = {
       inject: "body",
       template: "public/index.html",
       filename: "index.html",
-    }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "src/assets",
-          to: "assets",
-        },
-      ],
     }),
   ],
   module: {
@@ -55,6 +48,13 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        loader: "file-loader",
+        options: {
+          name: "asset/images/[name]-[hash].[ext]",
+        },
       },
     ],
   },
