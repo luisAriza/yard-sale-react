@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/app";
-// Estilos
-import "./sass/index.scss";
+import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("app"));

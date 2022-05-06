@@ -1,8 +1,13 @@
-import React from "react";
+// import React from "react";
+import Layout from "../containers/Layout";
+import Login from "../containers/login";
+import "../sass/_globals.scss";
 
 const App = () => {
 	return (
-		<h1>Hola Mundo, esta es mi configuración de webpack con react</h1>
+		<Layout>
+			<Login />
+		</Layout>
 	);
 }
 
