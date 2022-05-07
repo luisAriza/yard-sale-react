@@ -1,0 +1,72 @@
+@import "components/globals.scss";
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 36px;
+	box-shadow: 2px 0px 12px 1px var(--Very-light-pink);
+}
+.menu {
+	display: none;
+}
+.logo {
+	width: 150px;
+}
+.navbar-left {
+	display: flex;
+}
+.navbar-left ul {
+	margin-left: 36px;
+}
+.navbar-left ul, .navbar-right ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.navbar-left ul li a {
+	text-decoration: none;
+	color: var(--Very-light-pink);
+	font-size: var(--md);
+	font-weight: 500;
+	border: 1.5px solid var(--White);
+	border-radius: 8px;
+	padding: 4px 12px;
+}
+.navbar-left ul li a:hover {
+	font-size: var(--md);
+	border: 1.5px solid var(--Hospital-green);
+	color: var(--Hospital-green);
+}
+.navbar-right {
+	display: flex;
+	align-items: flex-end;
+}
+.navbar-email {
+	font-size: var(--sm);
+	margin-right: 28px;
+}
+.navbar-right img {
+	width: 30px;
+}
+
+@media (max-width: 991px) {
+	.navbar {
+		padding: 10px 16px;
+	}
+	.menu {
+		display: block;
+		width: auto;
+	}
+	.navbar-left ul {
+		display: none;
+	}
+	.navbar-email {
+		display: none;
+	}
+	.logo {
+		width: 100px;
+	}
+	.navbar-right img {
+		width: 24px;
+	}
+}
