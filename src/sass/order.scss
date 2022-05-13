@@ -1,23 +1,4 @@
-:root {
-    --Very-light-pink: #a3a3a3;
-    --White: #FFFFFF;
-    --Text-input-field: #F7F7F7;
-    --Black: #000000;
-    --Hospital-green: #ACD9B2;
-    --Dark: #232830;
-    --sm: 1.4rem;
-    --md: 1.6rem;
-    --lg: 1.8rem;
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 62.5%;
-    font-family: 'Quicksand', sans-serif;
-}
+@import "components/globals.scss";
 
 .my-order {
     width: 100%;
@@ -29,25 +10,28 @@ html {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 400px;
+    margin-top: 52px;
 }
-.tittle {
+.title {
     font-size: var(--lg);
     font-weight: 700;
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 .my-order-content {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
 }
 .order {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     align-items: center;
+    background-color: var(--Text-input-field);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding: 17px;
     font-size: var(--md);
     font-weight: 700;
-    margin-bottom: 24px;
 }
 .order p:nth-child(1) {
     display: flex;
@@ -61,8 +45,30 @@ html {
 }
 .order p:nth-child(2) {
     text-align: end;
-    padding-right: 24px;
+    padding-right: 8px;
 }
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.shopping-cart figure img {
+    width: 76px;
+    height: 76px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.shopping-cart p:nth-child(2) {
+    font-size: var(--sm);
+    color: var(--Very-light-pink);
+}
+.shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: 700;
+}
+
 @media (max-width: 640px) {
     .my-order {
         place-items: start;
@@ -72,10 +78,7 @@ html {
         margin-top: 0px;
         margin: 0 auto;
     }
-    .tittle {
+    .title {
         display: none;
-    }
-    .order {
-        margin-right: 20px;
     }
 }

@@ -1,23 +1,5 @@
-:root {
-    --Very-light-pink: #8b8b8b;
-    --White: #FFFFFF;
-    --Text-input-field: #F7F7F7;
-    --Black: #000000;
-    --Hospital-green: #ACD9B2;
-    --Dark: #232830;
-    --sm: 1.4rem;
-    --md: 1.6rem;
-    --lg: 1.8rem;
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 62.5%;
-    font-family: 'Quicksand', sans-serif;
-}
+@import "components/globals.scss";
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
