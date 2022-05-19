@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/order.scss";
+// import "@style/order.scss";
 import bike from "@image/pexels-photo-276517 (mobile).jpeg";
 
 function Order() {

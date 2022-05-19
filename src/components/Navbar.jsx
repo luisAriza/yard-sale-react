@@ -4,7 +4,7 @@ import menu from "@icon/icon_menu.svg";
 import logo from "@logo/logo_yard_sale.svg";
 import shoppingCar from "@icon/icon_shopping_cart.svg";
 
-const Navbar = () => {
+function Navbar() {
 	return (
 
 	<nav className="navbar">
@@ -45,6 +45,6 @@ const Navbar = () => {
 	</nav>
 
 	)
-};
+}
 
 export default Navbar;

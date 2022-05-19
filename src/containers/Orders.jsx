@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/orders.scss";
+// import "@style/orders.scss";
 import arrow from "@icon/flechita.svg";
 
 function Orders() {

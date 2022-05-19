@@ -1,9 +1,9 @@
-// import React from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "@container/Layout";
 import Home from "@page/Home";
 import NotFound from "@page/NotFound";
-import Layout from "@container/Layout";
-import Login from "@container/Login";
+import Login from "@page/Login";
 import RecoveryPassword from "@container/RecoveryPassword";
 import CreateAccount from "@container/CreateAccount";
 import EditAccount from "@container/EditAccount";
@@ -15,7 +15,6 @@ import Orders from "@container/Orders";
 import Order from "@container/Order";
 import MobileMenu from "@container/MobileMenu";
 import DesktopMenu from "@container/DesktopMenu";
-import Main from "@container/Main";
 
 const App = () => {
 	return (
@@ -35,7 +34,6 @@ const App = () => {
 					<Route exact path="/order" element={<Order />} />
 					<Route exact path="/m-menu" element={<MobileMenu />} />
 					<Route exact path="/d-menu" element={<DesktopMenu />} />
-					<Route exact path="/main" element={<Main />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</Layout>

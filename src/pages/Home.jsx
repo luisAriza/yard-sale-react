@@ -1,10 +1,14 @@
-// import React from 'react';
-import Navbar from "@component/Navbar";
+import React from 'react'
+import ProductList from "@container/ProductList"
 
 const Home = () => {
 	return (
-		<div></div>
+
+	<main id="main">
+		<ProductList />
+	</main>
+
 	)
 }
 
-export default Home;
+export default Home

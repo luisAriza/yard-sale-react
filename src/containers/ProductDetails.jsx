@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/productDetails.scss";
+// import "@style/productDetails.scss";
 import close from "@icon/icon_close.png";
 import addCart from "@icon/bt_add_to_cart.svg";
 import bike from "@image/pexels-photo-276517 (mobile).jpeg";

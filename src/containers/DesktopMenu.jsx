@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/desktopMenu.scss";
+// import "@style/desktopMenu.scss";
 
 function DesktopMenu() {
 	return (

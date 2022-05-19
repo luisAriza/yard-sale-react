@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/shoppingCart.scss";
+// import "@style/shoppingCart.scss";
 import arrow from "@icon/flechita.svg";
 import close from "@icon/icon_close.png";
 import bike from "@image/pexels-photo-276517 (mobile).jpeg";

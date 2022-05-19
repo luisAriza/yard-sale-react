@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/newPassword.scss";
+// import "@style/newPassword.scss";
 import logo from "@logo/logo_yard_sale.svg";
 
 function NewPassword() {

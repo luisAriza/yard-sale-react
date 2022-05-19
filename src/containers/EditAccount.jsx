@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/editAccount.scss";
+// import "@style/editAccount.scss";
 
 function EditAccount() {
 	return (

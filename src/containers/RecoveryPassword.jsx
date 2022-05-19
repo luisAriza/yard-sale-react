@@ -1,5 +1,5 @@
 // import React from 'react';
-import "@style/recoveryPassword.scss";
+// import "@style/recoveryPassword.scss";
 import logo from "@logo/logo_yard_sale.svg";
 import email from "@icon/email.svg";
 
