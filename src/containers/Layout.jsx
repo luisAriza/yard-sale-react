@@ -1,10 +1,12 @@
 // import React from 'react';
+import Navbar from "@component/Navbar";
 
 const Layout = ( {children} ) => {
 	return (
-		<main className="Layout">
+		<div className="Layout">
+			<Navbar />
 			{children}
-		</main>
+		</div>
 	)
 }
 
