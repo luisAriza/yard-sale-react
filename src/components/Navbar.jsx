@@ -35,7 +35,7 @@ function Navbar() {
 		<div className="navbar__right">
 			<ul>
 				<li className="navbar__email">
-					<a href="#">Sign in</a>
+					<a href="/login">Sign in</a>
 				</li>
 				<li className="navbar__shopping-cart">
 					<img src={shoppingCar} alt="Shopping cart" />
