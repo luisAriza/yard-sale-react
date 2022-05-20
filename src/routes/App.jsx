@@ -2,10 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@container/Layout";
 import Home from "@page/Home";
-import NotFound from "@page/NotFound";
 import Login from "@page/Login";
+import CreateAccount from "@page/CreateAccount";
 import RecoveryPassword from "@container/RecoveryPassword";
-import CreateAccount from "@container/CreateAccount";
 import EditAccount from "@container/EditAccount";
 import NewPassword from "@container/NewPassword";
 import SaveAccount from "@container/SaveAccount";
@@ -15,6 +14,7 @@ import Orders from "@container/Orders";
 import Order from "@container/Order";
 import MobileMenu from "@container/MobileMenu";
 import DesktopMenu from "@container/DesktopMenu";
+import NotFound from "@page/NotFound";
 
 const App = () => {
 	return (

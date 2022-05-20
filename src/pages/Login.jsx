@@ -8,10 +8,10 @@ const Login = () => {
 	<main id="main">
 		<section className="login">
 			<section className="login__container">
-				<a href="/" className="logo" >
+				<a href="/" className="logo login__logo" >
 					<img src={logo} alt="Logo"/>
 				</a>
-				<form className="login__form">
+				<form className="form login__form">
 					{/* Email */}
 					<label htmlFor="email">Email address</label>
 						<input type="text" id="email" placeholder="email@example.com" className="input login__input--email" />
@@ -19,11 +19,11 @@ const Login = () => {
 					<label htmlFor="password">Password</label>
 						<input type="password" id="password" placeholder="****************" className="input login__input--password" />
 					{/* Boton de envío */}
-					<input type="submit" value="Log in" className="primary-button" />
-					<a href="recovery-password">Forgot my password</a>
+					<input type="submit" value="Log in" className="primary-button login__button"/>
+					<a href="/recovery-password">Forgot my password</a>
 				</form>
 			</section>
-			<button className="secondary-button">Sign Up</button>
+			<button className="secondary-button login__button--signup ">Sign Up</button>
 		</section>
 	</main>
 
