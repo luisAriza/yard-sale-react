@@ -10,3 +10,87 @@
 body {
 	font-family: $Font-primary;
 }
+
+.login-section {
+	width: 100%;
+	min-height: 568px;
+	// 100% del viewport height menos el height del Header
+	height: calc(100vh - 60px);
+	display: grid;
+	place-items: center;
+	align-content: center;
+	&__container {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		width: 320px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	font-size: $sm;
+	font-weight: 700;
+	margin-bottom: 8px;
+	padding-left: 4px;
+}
+
+.input {
+	font-family: $Font-primary;
+	background-color: $Text-input-field;
+	border: 1px solid $Text-input-field;
+	border-radius: 8px;
+	height: 40px;
+	font-size: $md;
+	padding: 8px;
+	width: 100%;
+	margin-bottom: 24px;
+	outline: none;
+}
+
+.input:focus {
+	border: 1px solid $Hospital-green;
+	transition: .5s;
+}
+
+.primary-button {
+	font-family: $Font-primary;
+	font-size: $md;
+	font-weight: 700;
+	height: 56px;
+	border: none;
+	border-radius: 8px;
+	color: $White;
+	background-color: $Hospital-green;
+	cursor: pointer;
+}
+
+.secondary-button {
+	font-family: $Font-primary;
+	font-size: $md;
+	font-weight: 700;
+	height: 56px;
+	border: 1px solid $Hospital-green;
+	border-radius: 8px;
+	color: $Hospital-green;
+	background-color: $White;
+	cursor: pointer;
+}
+
+@media (max-width: 640px) {
+	.login-section {
+		padding: 0 20px;
+		&__container {
+			width: 100%;
+		}
+	}
+	.label {
+		margin-bottom: 12px;
+	}
+	.primary-button, .secondary-button {
+		height: 52px;
+	}
+}

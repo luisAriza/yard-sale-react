@@ -1,55 +1,16 @@
 @import "components/globals.scss";
 
 .create-account {
-	width: 100%;
-	min-height: 568px;
-	height: calc(100vh - 60px);
-	display: grid;
-	place-items: center;
-	align-content: center;
-	&__container {
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-		width: 320px;
-	}
 	&__title{
 		font-size: $lg;
 		font-weight: 700;
 		padding-left: 4px;
 	}
 	&__form {
-		display: flex;
-		flex-direction: column;
 		margin-top: 52px;
 	}
-	& label {
-		font-size: $sm;
-		font-weight: 700;
-		margin-bottom: 8px;
-		padding-left: 4px;
-	}
-	& .input {
-		font-family: 'Quicksand', sans-serif;
-		background-color: $Text-input-field;
-		border: none;
-		border-radius: 8px;
-		height: 36px;
-		font-size: $md;
-		padding: 8px;  
-		width: 100%;
-		margin-bottom: 28px;
-	}
-	& .primary-button {
-		font-family: 'Quicksand', sans-serif;
-		background-color: $Hospital-green;
-		border-radius: 8px;
-		border: none;
-		color: $White;
+	&__button {
 		width: 320px;
-		height: 52px;
-		cursor: pointer;
-		font-size: $md;
-		font-weight: 700;
 		margin-top: 12px;
 	}
 }
@@ -58,17 +19,11 @@
 	.create-account {
 		align-content: space-between;
 		// height: calc(100vh - 54px);
-		padding: 0 20px;
-		&__container {
-			width: 100%;
-		}
 		&__title{
 			margin-top: 36px;
 		}
-		& label {
-			margin-bottom: 12px;
-		}
-		& .primary-button{
+		&__button {
+			width: 100%;
 			margin-top: 0px;
 			margin-bottom: 20px;
 		}
