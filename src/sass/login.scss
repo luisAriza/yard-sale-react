@@ -4,6 +4,30 @@
 	&__logo {
 		display: none;
 	}
+	&__title {
+		font-size: $lg;
+		text-align: center;
+		margin-bottom: 12px;
+	}
+	&__subtitle {
+		font-size: $md;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	&__email-icon {
+		width: 132px;
+		height: 132px;
+		margin: 10px 0;
+		border-radius: 50%;
+		background-color: $Text-input-field;
+		display: flex;
+		justify-content: center;
+		justify-self: center;
+	}
+	&__email-icon img {
+		width: 80px;
+	}
 	&__button {
 		width: 100%;
 		margin-top: 20px;
@@ -11,11 +35,24 @@
 			width: 320px;
 			margin-top: 56px;
 		}
+		&--password {
+			margin-top: 4px;
+		}
 	}
-	&__recovery-password {
+	&__password-recovery, &__back-login {
 		text-align: center;
 		margin-top: 24px;
 		font-size: $sm;
+		font-weight: 500;
+		color: $Hospital-green;
+		text-decoration: none;
+	}
+	&__resent {
+		text-align: center;
+		margin-top: 28px;
+		font-size: 13px;
+	}
+	&__resent a {
 		font-weight: 500;
 		color: $Hospital-green;
 		text-decoration: none;
@@ -27,11 +64,21 @@
 		&__logo {
 			display: block;
 			justify-self: center;
-			width: 150px;
+			width: 200px;
 			margin-top: 40px;
+			&--password {
+				width: 140px;
+				margin-top: 60px;
+			}
 		}
 		&__logo img {
 			width: 100%;
+		}
+		&__title {
+			margin-top: 40px;
+		}
+		&__email-icon {
+			margin: 0 0 10px;
 		}
 		&__form {
 			margin-top: 32px;

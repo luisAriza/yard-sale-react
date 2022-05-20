@@ -19,7 +19,7 @@ const Login = () => {
 					<input type="password" id="password" placeholder="****************" className="input login__input--password" />
 				{/* Boton de envío */}
 				<input type="submit" value="Log in" className="primary-button login__button"/>
-				<a href="/recovery-password" className="login__recovery-password">Forgot my password</a>
+				<a href="/password-recovery" className="login__password-recovery">Forgot my password</a>
 			</form>
 		</section>
 		<button className="secondary-button login__button--signup ">Sign Up</button>

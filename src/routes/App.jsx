@@ -6,8 +6,9 @@ import Login from "@page/Login";
 import CreateAccount from "@page/CreateAccount";
 import MyAccount from "@page/MyAccount";
 import SaveAccount from "@page/SaveAccount";
-import RecoveryPassword from "@container/RecoveryPassword";
-import NewPassword from "@container/NewPassword";
+import PasswordRecovery from "@page/PasswordRecovery";
+import SendEmail from "@page/SendEmail";
+import NewPassword from "@page/NewPassword";
 import ShoppingCart from "@container/ShoppingCart";
 import ProductDetails from "@container/ProductDetails";
 import Orders from "@container/Orders";
@@ -23,11 +24,12 @@ const App = () => {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/login" element={<Login />} />
+					<Route exact path="/password-recovery" element={<PasswordRecovery />} />
+					<Route exact path="/send-email" element={<SendEmail />} />
+					<Route exact path="/new-password" element={<NewPassword />} />
 					<Route exact path="/signup" element={<CreateAccount />} />
 					<Route exact path="/account" element={<MyAccount />} />
 					<Route exact path="/save-account" element={<SaveAccount />} />
-					<Route exact path="/new-password" element={<NewPassword />} />
-					<Route exact path="/recovery-password" element={<RecoveryPassword />} />
 					<Route exact path="/shopping-cart" element={<ShoppingCart />} />
 					<Route exact path="/product-details" element={<ProductDetails />} />
 					<Route exact path="/orders" element={<Orders />} />
