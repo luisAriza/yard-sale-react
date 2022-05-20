@@ -1,7 +1,7 @@
 import React from 'react'
 import "@style/account.scss"
 
-const CreateAccount = () => {
+function SaveAccount() {
 	return (
 
 	<main className="login-section account">
@@ -19,10 +19,10 @@ const CreateAccount = () => {
 					<input type="password" id="password" placeholder="************" className="input account__input--password" />
 			</form>
 		</section>
-		<input type="submit" value="Create" className="primary-button account__button" />
+		<button className="primary-button account__button">Save</button>
 	</main>
 
 	)
-};
+}
 
-export default CreateAccount;
+export default SaveAccount;

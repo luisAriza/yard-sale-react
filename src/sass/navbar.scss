@@ -9,15 +9,8 @@
 	&__burger {
 		display: none;
 	}
-	&__logo img {
-		width: 150px;
-		height: 100%;
-	}
-	&__left {
+	&__left, &__right {
 		display: flex;
-	}
-	&__left ul {
-		margin-left: 36px;
 	}
 	&__left ul, &__right ul {
 		list-style: none;
@@ -25,7 +18,14 @@
 		align-items: center;
 		gap: 4px;
 	}
-	&__left ul li a {
+	&__logo img {
+		width: 150px;
+		height: 100%;
+	}
+	&__left ul {
+		margin-left: 36px;
+	}
+	&__left ul a {
 		text-decoration: none;
 		color: $Very-light-pink;
 		font-size: $md;
@@ -34,18 +34,14 @@
 		border-radius: 8px;
 		padding: 4px 12px;
 	}
-	&__left ul li a:hover {
+	&__left ul a:hover {
 		font-size: $md;
 		border: 1.5px solid $Hospital-green;
 		color: $Hospital-green;
 		transition: .5s;
 	}
-	&__left ul li a:not(:hover) {
+	&__left ul a:not(:hover) {
 		transition: .3s;
-	}
-	&__right {
-		display: flex;
-		align-items: center;
 	}
 	&__right img {
 		width: 28px;

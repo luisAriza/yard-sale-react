@@ -1,13 +1,21 @@
 @import "components/globals.scss";
 
-.create-account {
-	&__title{
+.account {
+	&__title {
 		font-size: $lg;
 		font-weight: 700;
 		padding-left: 4px;
 	}
 	&__form {
 		margin-top: 52px;
+	}
+	&__value {
+		height: 40px;
+		font-size: $md;
+		font-weight: 300;
+		padding: 8px 4px;
+		width: 100%;
+		margin-bottom: 24px;
 	}
 	&__button {
 		width: 320px;
@@ -16,10 +24,8 @@
 }
 
 @media (max-width: 640px) {
-	.create-account {
-		align-content: space-between;
-		// height: calc(100vh - 54px);
-		&__title{
+	.account {
+		&__title {
 			margin-top: 36px;
 		}
 		&__button {

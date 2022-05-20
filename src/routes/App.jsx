@@ -4,10 +4,10 @@ import Layout from "@container/Layout";
 import Home from "@page/Home";
 import Login from "@page/Login";
 import CreateAccount from "@page/CreateAccount";
+import MyAccount from "@page/MyAccount";
+import SaveAccount from "@page/SaveAccount";
 import RecoveryPassword from "@container/RecoveryPassword";
-import EditAccount from "@container/EditAccount";
 import NewPassword from "@container/NewPassword";
-import SaveAccount from "@container/SaveAccount";
 import ShoppingCart from "@container/ShoppingCart";
 import ProductDetails from "@container/ProductDetails";
 import Orders from "@container/Orders";
@@ -23,8 +23,8 @@ const App = () => {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/login" element={<Login />} />
-					<Route exact path="/create-account" element={<CreateAccount />} />
-					<Route exact path="/edit-account" element={<EditAccount />} />
+					<Route exact path="/signup" element={<CreateAccount />} />
+					<Route exact path="/account" element={<MyAccount />} />
 					<Route exact path="/save-account" element={<SaveAccount />} />
 					<Route exact path="/new-password" element={<NewPassword />} />
 					<Route exact path="/recovery-password" element={<RecoveryPassword />} />

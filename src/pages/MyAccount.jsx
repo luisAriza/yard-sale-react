@@ -1,7 +1,7 @@
 import React from 'react'
 import "@style/account.scss"
 
-const CreateAccount = () => {
+function MyAccount() {
 	return (
 
 	<main className="login-section account">
@@ -10,19 +10,19 @@ const CreateAccount = () => {
 			<form action="/" className="form account__form">
 				{/* Nombre */}
 				<label htmlFor="name" className="label">Name</label>
-					<input type="text" id="name" placeholder="Camilo Perez" className="input account__input--name" />
+					<p className="account__value">Camilo Perez</p>
 				{/* Email */}
 				<label htmlFor="email" className="label">Email address</label>
-					<input type="text" id="email" placeholder="email@example.com" className="input account__input--email" />
+					<p className="account__value">camilo.perez@hotmail.com</p>
 				{/* Contraseña */}
 				<label htmlFor="password" className="label">Password</label>
-					<input type="password" id="password" placeholder="************" className="input account__input--password" />
+					<p className="account__value">************</p>
 			</form>
 		</section>
-		<input type="submit" value="Create" className="primary-button account__button" />
+		<input type="submit" value="Edit" className="secondary-button account__button" />
 	</main>
 
 	)
-};
+}
 
-export default CreateAccount;
+export default MyAccount;

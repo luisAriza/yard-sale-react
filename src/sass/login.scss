@@ -14,7 +14,7 @@
 	}
 	&__recovery-password {
 		text-align: center;
-		margin-top: 28px;
+		margin-top: 24px;
 		font-size: $sm;
 		font-weight: 500;
 		color: $Hospital-green;
@@ -24,22 +24,25 @@
 
 @media (max-width: 640px) {
 	.login {
-		align-content: center;
 		&__logo {
 			display: block;
-			width: 60%;
-			max-width: 220px;
 			justify-self: center;
+			width: 150px;
+			margin-top: 40px;
 		}
 		&__logo img {
 			width: 100%;
 		}
 		&__form {
-			margin-top: 40px;
+			margin-top: 32px;
 		}
-		&__button--signup {
-			width: 100%;
-			margin-top: 72px;
+		&__button {
+			margin-top: 4px;
+			&--signup {
+				width: 100%;
+				margin-top: 0;
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
