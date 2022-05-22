@@ -4,7 +4,7 @@ import ProductList from "@container/ProductList"
 const Home = () => {
 	return (
 
-	<main id="main">
+	<main id="home">
 		<ProductList />
 	</main>
 

@@ -1,16 +1,21 @@
 import React from 'react'
-import "@style/orderItem.scss"
-import bike from "@image/pexels-photo-276517 (mobile).jpeg"
+import arrow from "@icon/flechita.svg"
+import "@style/ordersItem.scss"
 
 function OrderItem() {
 	return (
-		<div className="order-item">
-			<figure className='order-item__product-image'>
-				<img src={bike} alt="bike" />
-			</figure>
-			<p className='order-item__title'>Bike</p>
-			<p className='order-item__price'>$ 30,00</p>
-		</div>
+
+	<div className="orders-item">
+		<p>
+			<span className='orders-item__date'>06.01.2022</span>
+			<span className='orders-item__articles'>6 articles</span>
+		</p>
+		<p className='orders-item__price'>$ 180.00</p>
+		<a href="/order">
+			<img src={arrow} alt="Icono >" className='orders-item__icon' />
+		</a>
+	</div>
+
 	)
 }
 

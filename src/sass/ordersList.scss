@@ -1,0 +1,39 @@
+@import "components/globals.scss";
+
+.orders {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: calc(100vh - 60px);
+}
+
+.orders-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 400px;
+	&__title {
+		font-size: $lg;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		margin-top: 32px;
+	}
+}
+
+@media (max-width: 640px) {
+	.orders {
+		place-items: start;
+	}
+
+	.orders-container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 20px;
+		&__title {
+			display: none;
+		}
+	}
+}

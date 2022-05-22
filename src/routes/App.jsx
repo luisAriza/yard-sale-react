@@ -9,8 +9,8 @@ import SaveAccount from "@page/SaveAccount";
 import PasswordRecovery from "@page/PasswordRecovery";
 import SendEmail from "@page/SendEmail";
 import NewPassword from "@page/NewPassword";
-import Orders from "@container/Orders";
-import Order from "@component/Order";
+import Orders from "@page/Orders";
+import Order from "@page/Order";
 import ShoppingCart from "@container/ShoppingCart";
 import MobileMenu from "@container/MobileMenu";
 import DesktopMenu from "@container/DesktopMenu";
@@ -29,9 +29,9 @@ const App = () => {
 					<Route exact path="/signup" element={<CreateAccount />} />
 					<Route exact path="/account" element={<MyAccount />} />
 					<Route exact path="/save-account" element={<SaveAccount />} />
-					<Route exact path="/shopping-cart" element={<ShoppingCart />} />
 					<Route exact path="/orders" element={<Orders />} />
 					<Route exact path="/order" element={<Order />} />
+					<Route exact path="/shopping-cart" element={<ShoppingCart />} />
 					<Route exact path="/m-menu" element={<MobileMenu />} />
 					<Route exact path="/d-menu" element={<DesktopMenu />} />
 					<Route path="*" element={<NotFound />} />
