@@ -9,11 +9,11 @@ import SaveAccount from "@page/SaveAccount";
 import PasswordRecovery from "@page/PasswordRecovery";
 import SendEmail from "@page/SendEmail";
 import NewPassword from "@page/NewPassword";
-import Orders from "@page/Orders";
-import Order from "@page/Order";
-import ShoppingCart from "@container/ShoppingCart";
-import MobileMenu from "@container/MobileMenu";
-import DesktopMenu from "@container/DesktopMenu";
+import Orders from "@page/MyOrders";
+import Order from "@page/MyOrder";
+import ProductDetail from "@container/ProductDetail";
+import Checkout from "@container/Checkout";
+import Menu from "@container/Menu";
 import NotFound from "@page/NotFound";
 
 const App = () => {
@@ -31,10 +31,10 @@ const App = () => {
 					<Route exact path="/save-account" element={<SaveAccount />} />
 					<Route exact path="/orders" element={<Orders />} />
 					<Route exact path="/order" element={<Order />} />
-					<Route exact path="/shopping-cart" element={<ShoppingCart />} />
-					<Route exact path="/m-menu" element={<MobileMenu />} />
-					<Route exact path="/d-menu" element={<DesktopMenu />} />
+					<Route exact path="/checkout" element={<Checkout />} />
 					<Route path="*" element={<NotFound />} />
+					<Route exact path="/product-detail" element={<ProductDetail />} />
+					<Route exact path="/menu" element={<Menu />} />
 				</Routes>
 			</Layout>
 		</BrowserRouter>

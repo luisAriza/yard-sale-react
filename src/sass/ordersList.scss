@@ -4,13 +4,13 @@
 	display: grid;
 	place-items: center;
 	width: 100%;
-	height: calc(100vh - 60px);
 }
 
 .orders-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	width: 400px;
+	margin: 52px 0 32px;
 	&__title {
 		font-size: $lg;
 		font-weight: 700;

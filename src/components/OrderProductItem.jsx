@@ -1,6 +1,7 @@
 import React from 'react'
 import "@style/orderProductItem.scss"
 import bike from "@image/pexels-photo-276517 (mobile).jpeg"
+import close from "@icon/icon_close.png"
 
 function OrderItem() {
 	return (

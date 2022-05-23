@@ -1,5 +1,6 @@
 import React from 'react'
 import "@style/productInfo.scss"
+import close from "@icon/icon_close.png"
 import addCart from "@icon/bt_add_to_cart.svg"
 import bike from "@image/pexels-photo-276517 (mobile).jpeg"
 
@@ -7,6 +8,9 @@ function ProductInfo() {
 	return (
 
 	<>
+		<figure className="product-info__close-icon">
+			<img src={close} alt="Close" />
+		</figure>
 		<figure className='product-info__image'>
 			<img src={bike} alt="Bike" />
 		</figure>

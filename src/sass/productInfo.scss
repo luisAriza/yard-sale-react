@@ -1,6 +1,29 @@
 @import "components/globals.scss";
 
 .product-info {
+	&__close-icon {
+		display: grid;
+		place-content: center;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		background: $White;
+		opacity: .5;
+		box-shadow: 2px 2px 5px 1px $Very-light-pink;
+	}
+	&__close-icon:hover {
+		background: white;
+		opacity: 1;
+		box-shadow: 2px 2px 8px 4px $Very-light-pink;
+		cursor: pointer;
+		transition: .3s;
+	}
+	&__close-icon:not(:hover) {
+		transition: .5s;
+	}
 	&__image {
 		width: 100%;
 	}
@@ -60,12 +83,16 @@
 
 @media (max-width: 640px) {
 	.product-info {
-		&__detail {
-		padding: 0 20px;
+		&__close-icon {
+			width: 28px;
+			height: 28px;
+			top: calc(12px + 54px);
 		}
 		&__image img {
-			
 			height: 200px;
+		}
+		&__detail {
+		padding: 0 20px;
 		}
 	}
 }

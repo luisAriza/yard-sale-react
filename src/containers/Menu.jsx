@@ -1,10 +1,12 @@
-// import React from 'react';
-// import "@style/mobileMenu.scss";
+import React from 'react'
+import "@style/menu.scss"
+import close from "@icon/icon_close.png"
 
-function MobileMenu() {
+function Menu() {
 	return (
 
-	<section className="mobile-menu">
+	<section className="menu">
+		<img src={close} alt="icon de close" className='menu__icon-close' />
 		<ul>
 			<li>
 				<a href="/">CATEGORIES</a>
@@ -30,21 +32,16 @@ function MobileMenu() {
 		</ul>
 		<ul>
 			<li>
-				<a href="/">My orders</a>
+				<a href="/orders">My orders</a>
 			</li>
 			<li>
-				<a href="/">My account</a>
+				<a href="/account">My account</a>
 			</li>
 		</ul>
-		<ul>
-			<li className="email">camilo.perez@hotmail.com</li>
-			<li>
-				<a href="/" className="sign-out">Sign out</a>
-			</li>
-		</ul>
+		<a href="/login" className="menu__login">Log in</a>
 	</section>
 
 	)
 }
 
-export default MobileMenu;
+export default Menu;

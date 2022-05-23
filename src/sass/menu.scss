@@ -1,0 +1,36 @@
+@import "components/globals.scss";
+
+.menu {
+	padding: 32px;
+	padding-top: 20px;
+	&__icon-close {
+		position: absolute;
+		right: 32px;
+		cursor: pointer;
+	}
+	& ul {
+		display: flex;
+		flex-direction: column;
+		gap: 36px;
+		width: 100%;
+		list-style: none;
+		margin-bottom: 40px;
+	}
+	& ul:nth-child(2) {
+		padding: 14px 0 40px;
+		border-bottom: 1px solid $Very-light-pink;
+	}
+	& ul a {
+		text-decoration: none;
+		color: Black;
+		font-size: $md;
+		font-weight: 700;
+		list-style: none;
+	}
+	&__login {
+		font-size: $sm;
+		font-weight: 700;
+		color: $Hospital-green;
+		text-decoration: none;
+	}
+}

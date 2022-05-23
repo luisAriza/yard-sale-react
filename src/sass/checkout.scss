@@ -1,0 +1,76 @@
+@import "components/globals.scss";
+
+.checkout{
+	display: grid;
+	grid-template-rows: auto 1fr;
+	align-items: flex-start;
+	width: 360px;
+	min-height: 590px;
+	height: calc(100vh - 60px);
+	position: absolute;
+	right: 0;
+	box-shadow: 0px 6px 8px 4px $Very-light-pink;
+	padding: 20px;
+	&__title {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 36px;
+		font-size: $md;
+	}
+	&__title img {
+		margin-left: 8px;
+		width: 8px;
+		transform: rotate(180deg);
+		cursor: pointer;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__shopping-cart {
+		display: grid;
+		grid-template-columns: auto 14px;
+		align-items: center;
+		gap: 20px;
+	}
+	&__icon-close {
+		cursor: pointer;
+	}
+	&__total {
+		display: grid;
+		grid-template-columns: auto auto;
+		align-self: flex-end;
+		align-items: center;
+		justify-content: space-between;
+		height: 70px;
+		margin: 20px 0;
+		padding: 0 20px;
+		font-weight: 700;
+		border-radius: 8px;
+		background-color: $Text-input-field;
+	}
+	&__total p:first-child {
+		font-size: $sm;
+	}
+	&__button {
+		align-self: flex-end;
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.checkout {
+		width: 100%;
+		max-width: 560px;
+		min-height: 514px;
+		position: static;
+		margin: 0 auto;
+		padding-top: 24px;
+		box-shadow: none;
+		&__title {
+			display: none;
+		}
+	}
+}
