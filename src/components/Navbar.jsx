@@ -1,10 +1,16 @@
-// import React from 'react';
-import "@style/navbar.scss";
-import menu from "@icon/icon_menu.svg";
-import logo from "@logo/logo_yard_sale.svg";
-import shoppingCar from "@icon/icon_shopping_cart.svg";
+import React, { useState } from 'react'
+import Menu from "@container/Menu"
+import "@style/navbar.scss"
+import menu from "@icon/icon_menu.svg"
+import logo from "@logo/logo_yard_sale.svg"
+import shoppingCar from "@icon/icon_shopping_cart.svg"
 
 function Navbar() {
+	const [toggle, setToggle] = useState(false);
+	const handleToggle = () => {
+		setToggle(!toggle);
+	}
+
 	return (
 
 	<nav className="navbar">
@@ -34,14 +40,16 @@ function Navbar() {
 		</div>
 		<div className="navbar__right">
 			<ul>
-				<li className="navbar__email">
-					<a href="/login">Sign in</a>
+				<li className="navbar__email" onClick={handleToggle}>
+					lmanuel159@hotmail.com
+					{/* <a href="/login">Sign in</a> */}
 				</li>
 				<li className="navbar__shopping-cart">
 					<img src={shoppingCar} alt="Shopping cart" />
 				</li>
 			</ul>
-		</div>
+			</div>
+			{toggle && <Menu />}
 	</nav>
 
 	)

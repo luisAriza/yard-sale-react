@@ -13,7 +13,6 @@ import Orders from "@page/MyOrders";
 import Order from "@page/MyOrder";
 import ProductDetail from "@container/ProductDetail";
 import Checkout from "@container/Checkout";
-import Menu from "@container/Menu";
 import NotFound from "@page/NotFound";
 
 const App = () => {
@@ -34,7 +33,6 @@ const App = () => {
 					<Route exact path="/checkout" element={<Checkout />} />
 					<Route path="*" element={<NotFound />} />
 					<Route exact path="/product-detail" element={<ProductDetail />} />
-					<Route exact path="/menu" element={<Menu />} />
 				</Routes>
 			</Layout>
 		</BrowserRouter>

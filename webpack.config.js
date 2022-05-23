@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/"),
     filename: "app/bundle.js",
-    publicPath: "/",
+    // publicPath: "/",
   },
   mode: "production",
   resolve: {
@@ -56,10 +56,18 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(svg|png|jpe?g|gif)$/i,
+        test: /\.(svg|png|jpe?g|gif)$/,
         loader: "file-loader",
         options: {
-          name: "assets/images/[name]-[hash].[ext]",
+          name: "[name]-[hash].[ext]",
+          outputPath: "assets/images",
+        },
+      },
+      {
+        type: "asset/resource",
+        test: /(_fora.svg)$/i,
+        generator: {
+          filename: "assets/icons/[name]-[hash][ext][query]",
         },
       },
     ],

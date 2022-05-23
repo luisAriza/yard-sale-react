@@ -1,12 +1,17 @@
 @import "components/globals.scss";
 
 .menu {
+	position: absolute;
+	top: 59px;
+	right: 100px;
+	width: 160px;
 	padding: 32px;
 	padding-top: 20px;
+	border-radius: 0 0 20px 20px;
+	background-color: $White;
+	box-shadow: 0px 8px 20px 0px $Very-light-pink;
 	&__icon-close {
-		position: absolute;
-		right: 32px;
-		cursor: pointer;
+		display: none;
 	}
 	& ul {
 		display: flex;
@@ -17,8 +22,7 @@
 		margin-bottom: 40px;
 	}
 	& ul:nth-child(2) {
-		padding: 14px 0 40px;
-		border-bottom: 1px solid $Very-light-pink;
+		display: none;
 	}
 	& ul a {
 		text-decoration: none;
@@ -32,5 +36,24 @@
 		font-weight: 700;
 		color: $Hospital-green;
 		text-decoration: none;
+	}
+}
+
+@media (max-width: 640px) {
+	.menu {
+		width: 100%;
+		top: 53px;
+		right: 0;
+		border-radius: 0px;
+		&__icon-close {
+			position: absolute;
+			right: 32px;
+			cursor: pointer;
+		}
+		& ul:nth-child(2) {
+			display: block;
+			padding: 14px 0 40px;
+			border-bottom: 1px solid $Very-light-pink;
+		}
 	}
 }

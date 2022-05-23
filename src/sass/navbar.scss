@@ -46,13 +46,19 @@
 	&__right img {
 		width: 28px;
 	}
-	&__email a {
+	&__email {
 		font-size: $md;
 		margin-right: 24px;
-		color: $Hospital-green;
-		font-weight: 500;
-		text-decoration: none;
+		font-weight: 300;
+		cursor: pointer;
 	}
+	// &__email a {
+	// 	font-size: $md;
+	// 	margin-right: 24px;
+	// 	color: $Hospital-green;
+	// 	font-weight: 500;
+	// 	text-decoration: none;
+	// }
 }
 
 @media (max-width: 991px) {
