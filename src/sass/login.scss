@@ -28,12 +28,15 @@
 	&__email-icon img {
 		width: 80px;
 	}
+	& > a {
+		width: 320px;
+		margin-top: 56px;
+	}
 	&__button {
 		width: 100%;
 		margin-top: 20px;
 		&--signup {
-			width: 320px;
-			margin-top: 56px;
+			width: 100%;
 		}
 		&--password {
 			margin-top: 4px;
@@ -83,12 +86,15 @@
 		&__form {
 			margin-top: 32px;
 		}
+		& > a {
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
 		&__button {
 			margin-top: 4px;
 			&--signup {
 				width: 100%;
-				margin-top: 0;
-				margin-bottom: 20px;
 			}
 		}
 	}

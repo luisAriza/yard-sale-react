@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "@style/login.scss"
 import logo from "@logo/logo_yard_sale.svg"
 
 const Login = () => {
+	const form = useRef(null);
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		const formData = new FormData(form.current);
+		const data = {
+			username: formData.get("email"),
+			password: formData.get("password"),
+		}
+		console.log(data);
+	}
+
 	return (
 	
 	<main className="login-section login">
@@ -10,19 +21,25 @@ const Login = () => {
 			<a href="/" className="logo login__logo" >
 				<img src={logo} alt="Logo"/>
 			</a>
-			<form className="form login__form">
+			<form action='/' className="form login__form" ref={form} >
 				{/* Email */}
 				<label htmlFor="email" className="label">Email address</label>
-					<input type="text" id="email" placeholder="email@example.com" className="input login__input--email" />
+					<input type="text" name="email" placeholder="email@example.com" className="input login__input--email" />
 				{/* Contraseña */}
 				<label htmlFor="password" className="label">Password</label>
-					<input type="password" id="password" placeholder="****************" className="input login__input--password" />
+					<input type="password" name="password" placeholder="****************" className="input login__input--password" />
 				{/* Boton de envío */}
-				<input type="submit" value="Log in" className="primary-button login__button"/>
+				<button className="primary-button login__button" onClick={handleSubmit}>
+					Log in
+				</button>
 				<a href="/password-recovery" className="login__password-recovery">Forgot my password</a>
 			</form>
 		</section>
-		<button className="secondary-button login__button--signup ">Sign Up</button>
+		<a href="/signup">
+			<button className="secondary-button login__button--signup">
+				Sign Up
+			</button>
+		</a>
 	</main>
 
 	)

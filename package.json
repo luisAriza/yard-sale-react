@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/luisAriza/frontend_developer#readme",
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.0",
+    "axios": "^0.27.2",
     "gh-pages": "^3.2.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
