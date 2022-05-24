@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Menu from "@container/Menu"
+import AppContext from "@context/appContext"
 import "@style/navbar.scss"
 import menu from "@icon/icon_menu.svg"
 import logo from "@logo/logo_yard_sale.svg"
@@ -7,6 +8,8 @@ import shoppingCar from "@icon/icon_shopping_cart.svg"
 
 function Navbar() {
 	const [toggle, setToggle] = useState(false);
+	const { state } = useContext(AppContext);
+
 	const handleToggle = () => {
 		setToggle(!toggle);
 	}
@@ -46,6 +49,7 @@ function Navbar() {
 				</li>
 				<li className="navbar__shopping-cart">
 					<img src={shoppingCar} alt="Shopping cart" />
+					{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
 				</li>
 			</ul>
 			</div>
