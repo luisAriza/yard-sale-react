@@ -6,11 +6,12 @@
 	align-items: flex-start;
 	width: 360px;
 	min-height: 590px;
-	height: calc(100vh - 60px);
 	position: absolute;
 	right: 0;
-	box-shadow: 0px 6px 8px 4px $Very-light-pink;
+	top: 59px;
+	box-shadow: -2px 12px 20px -8px $Dark;
 	padding: 20px;
+	background-color: $White;
 	&__title {
 		display: flex;
 		gap: 30px;
