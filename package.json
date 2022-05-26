@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "E-Shop with reactJs",
   "main": "src/index.js",
-  "homepage": "https://luisariza.github.io/yard_sale/",
+  "homepage": "https://luisariza-yardsale.netlify.app/",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.js",

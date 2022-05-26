@@ -68,7 +68,7 @@ module.exports = {
       },
       {
         type: "asset/resource",
-        test: /(_fora.svg)$/i,
+        test: /(cut.svg)$/i,
         generator: {
           filename: "assets/icons/[name]-[hash][ext][query]",
         },
