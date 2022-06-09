@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
@@ -29,11 +30,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: "body",
+      favicon: "public/favicon.svg",
       template: "public/index.html",
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
       filename: "styles/[name].min.css",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "public/favicon.svg", to: "assets/icons/" }],
     }),
     new CleanWebpackPlugin(),
   ],
@@ -64,13 +69,6 @@ module.exports = {
         options: {
           name: "[name]-[hash].[ext]",
           outputPath: "assets/images",
-        },
-      },
-      {
-        type: "asset/resource",
-        test: /(cut.svg)$/i,
-        generator: {
-          filename: "assets/icons/[name]-[hash][ext][query]",
         },
       },
     ],
