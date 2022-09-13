@@ -18,8 +18,12 @@
 		margin-bottom: 24px;
 	}
 	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 320px;
 		margin-top: 12px;
+		text-decoration: none;
 	}
 }
 

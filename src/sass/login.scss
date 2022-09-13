@@ -33,8 +33,12 @@
 		margin-top: 56px;
 	}
 	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		margin-top: 20px;
+		text-decoration: none;
 		&--signup {
 			width: 100%;
 		}
